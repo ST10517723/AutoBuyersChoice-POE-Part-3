@@ -308,10 +308,10 @@ Added:
 
 ### Website References
 
-- W3Schools (2024) HTML Tutorial. Available at: https://www.w3schools.com/html/ (Accessed: DD Month 2026).
-- MDN Web Docs (n.d.) Using the Fetch API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (Accessed: DD Month 2026).
-- MDN Web Docs (n.d.) Intersection Observer API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API (Accessed: DD Month 2026).
-- Google (n.d.) Google Forms. Available at: https://forms.google.com (Accessed: DD Month 2026).
+- W3Schools (2024) HTML Tutorial. Available at: https://www.w3schools.com/html/ (Accessed: 20 October 2026).
+- MDN Web Docs (n.d.) Using the Fetch API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (Accessed: 2 November 2026).
+- MDN Web Docs (n.d.) Intersection Observer API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API (Accessed: 2 November 2026).
+- Google (n.d.) Google Forms. Available at: https://forms.google.com (Accessed: 21 October 2026).
 
 ---
 
