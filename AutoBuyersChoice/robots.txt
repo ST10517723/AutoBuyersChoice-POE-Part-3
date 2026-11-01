@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https:///sitemap.xml
+Sitemap: https://st10517723.github.io/AutoBuyersChoice-POE-Part-3/AutoBuyersChoice/sitemap.xml
