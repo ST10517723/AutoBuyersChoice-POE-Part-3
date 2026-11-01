@@ -1,0 +1,1021 @@
+
+
+/* This makes sizing easier to control*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #F4F1EA;
+}
+
+header {
+    background-color: rgb(130, 106, 54);
+    padding-top: 15px;
+}
+
+header img {
+    max-width: 280px;
+    width: auto;
+    height: auto;
+}
+
+nav ul {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0.8rem;
+    gap: 0.5rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.7rem 1rem;
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgba(130, 106, 54);
+}
+
+nav ul li a:focus {
+    outline: 3px solid aqua;
+    outline-offset: 2px;
+}
+
+nav ul li a:active {
+    color: aqua;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding: 20px;
+    color: rgb(80, 62, 30);
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.3;
+    padding: 20px;
+    color: rgb(80, 62, 30);
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 20px;
+    color: rgb(80, 62, 30);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0.8rem;
+}
+
+.container div {
+    background-color: rgba(0, 150, 136);
+    padding: 1.25rem;
+    color: white;
+    border-radius: 0.7rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
+    border: 2px solid rgb(0, 105, 92);
+}
+
+.container p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+    padding: 0.8rem;
+    border: 1px solid #555555;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(130, 106, 54);
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: white;
+}
+
+form {
+    max-width: 700px;
+    background-color: #509fd0a0;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+    border: 1px solid #888888;
+    border-radius: 0.4rem;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(10, 167, 138, 0.4);
+    border-color: rgb(10, 167, 138);
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: rgb(130, 106, 54);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(10, 167, 138);
+}
+
+main a {
+    color: rgb(10, 120, 100);
+    font-weight: bold;
+}
+
+main a:hover {
+    color: rgb(130, 106, 54);
+}
+
+iframe {
+    max-width: 100%;
+    border: 0;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header img {
+        max-width: 220px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    main {
+        width: 94%;
+        padding: 1.2rem 0;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 0.7rem;
+    }
+
+    .container div {
+        padding: 1rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 0.6rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.error-message {
+    display: block;
+    color: #8b0000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    min-height: 1.2rem;
+}
+
+input.invalid,
+select.invalid,
+textarea.invalid {
+    border: 2px solid #8b0000;
+    background-color: #fff0f0;
+}
+
+.char-count {
+    display: block;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #333333;
+}
+
+.form-status {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+.response-box {
+    max-width: 700px;
+    background-color: rgb(0, 150, 136);
+    color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 0.8rem;
+    border: 2px solid rgb(0, 105, 92);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.response-box h2 {
+    color: white;
+    padding: 0 0 1rem 0;
+}
+
+.response-box ul {
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+.response-box li {
+    margin-bottom: 0.6rem;
+}
+
+.response-box a {
+    color: white;
+}
+
+.response-box[hidden],
+form[hidden],
+iframe[hidden] {
+    display: none;
+}
+
+
+#contactForm,
+#enquiryForm {
+    max-width: 700px;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #509fd0a0;
+    border-top: 6px solid rgb(130, 106, 54);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+#contactForm label,
+#enquiryForm label {
+    color: rgb(80, 62, 30);
+    font-size: 1.05rem;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm input[type="tel"],
+#contactForm select,
+#contactForm textarea,
+#enquiryForm input[type="text"],
+#enquiryForm input[type="email"],
+#enquiryForm select,
+#enquiryForm textarea {
+    background-color: #faf8f3;
+    border: 1px solid #b9ad8f;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+#contactForm input[type="text"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm input[type="tel"]:focus,
+#contactForm select:focus,
+#contactForm textarea:focus,
+#enquiryForm input[type="text"]:focus,
+#enquiryForm input[type="email"]:focus,
+#enquiryForm select:focus,
+#enquiryForm textarea:focus {
+    background-color: white;
+    border-color: rgb(0, 150, 136);
+    box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.25);
+    outline: none;
+}
+
+#contactForm .invalid,
+#enquiryForm .invalid {
+    background-color: #fff0f0;
+    border: 2px solid #8b0000;
+}
+
+#contactForm input[type="submit"],
+#enquiryForm input[type="submit"] {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+    background-color: rgb(130, 106, 54);
+    border-radius: 0.5rem;
+}
+
+#contactForm input[type="submit"]:hover:not(:disabled),
+#enquiryForm input[type="submit"]:hover:not(:disabled) {
+    background-color: rgb(0, 150, 136);
+}
+
+#contactForm input[type="submit"]:disabled,
+#enquiryForm input[type="submit"]:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+}
+
+main:has(#contactForm) h1 {
+    border-bottom: 4px solid rgb(130, 106, 54);
+    margin-bottom: 1rem;
+}
+
+main:has(#contactForm) h2 {
+    border-left: 6px solid rgb(0, 150, 136);
+    margin: 1.5rem 0 0.8rem 0;
+    padding: 0.4rem 0 0.4rem 1rem;
+}
+
+main:has(#contactForm) .response-box h2 {
+    border-left: none;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+main:has(#contactForm) h3 {
+    margin-top: 1.5rem;
+    padding: 0.4rem 0 0.4rem 1rem;
+    border-left: 4px solid rgb(130, 106, 54);
+}
+
+main:has(#contactForm) > p {
+    margin-left: 20px;
+    padding: 0.7rem 1rem;
+    max-width: 700px;
+    background-color: white;
+    border-left: 4px solid rgb(130, 106, 54);
+    border-radius: 0 0.5rem 0.5rem 0;
+    box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.12);
+}
+
+main:has(#contactForm) > p:first-of-type {
+    border-left-color: rgb(0, 150, 136);
+}
+
+main:has(#contactForm) iframe {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 320px;
+    margin: 0.5rem 0 2rem 20px;
+    border: 3px solid rgb(130, 106, 54);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+main:has(#contactForm) #contactForm,
+main:has(#contactForm) #contactResponse {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #contactForm,
+    #enquiryForm {
+        padding: 1.2rem;
+    }
+
+    main:has(#contactForm) > p,
+    main:has(#contactForm) iframe,
+    main:has(#contactForm) #contactForm,
+    main:has(#contactForm) #contactResponse {
+        margin-left: 0;
+    }
+
+    main:has(#contactForm) iframe {
+        height: 250px;
+    }
+}
+.accordion-intro {
+    padding: 0 20px;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 1rem 0 2rem 0;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    background-color: white;
+    border-left: 6px solid rgb(130, 106, 54);
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.accordion-item.open {
+    border-left-color: rgb(0, 150, 136);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.accordion-heading {
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.1rem 1.4rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(80, 62, 30);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #f4f1ea;
+}
+
+.accordion-button:focus {
+    outline: 3px solid rgb(0, 150, 136);
+    outline-offset: -3px;
+}
+
+.accordion-button::after {
+    content: "+";
+    font-size: 1.8rem;
+    color: rgb(130, 106, 54);
+    transition: transform 0.3s;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: "\2212";
+    color: rgb(0, 150, 136);
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.4rem;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-panel p {
+    margin: 0;
+    padding: 0.5rem 0 1.4rem 0;
+}
+.gallery-intro {
+    padding: 0 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.gallery-card {
+    margin: 0;
+    background-color: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.35);
+}
+
+.gallery-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.gallery-item:focus {
+    outline: 3px solid rgb(0, 150, 136);
+    outline-offset: -3px;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-card figcaption {
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+    color: rgb(80, 62, 30);
+    text-align: center;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.lightbox.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-figure {
+    margin: 0;
+    max-width: 80vw;
+    text-align: center;
+}
+
+.lightbox-image {
+    display: block;
+    max-width: 80vw;
+    max-height: 75vh;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.6);
+    transform: scale(0.95);
+    transition: transform 0.3s;
+}
+
+.lightbox.open .lightbox-image {
+    transform: scale(1);
+}
+
+.lightbox-caption {
+    margin-top: 0.8rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.lightbox-close,
+.lightbox-arrow {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.lightbox-close:hover,
+.lightbox-arrow:hover {
+    background-color: rgb(0, 150, 136);
+}
+
+.lightbox-close:focus,
+.lightbox-arrow:focus {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.lightbox-arrow {
+    flex-shrink: 0;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .lightbox {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .lightbox-figure {
+        order: -1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .lightbox-image {
+        max-width: 100%;
+    }
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.7rem 1.4rem rgba(0, 0, 0, 0.5);
+}
+
+tr td {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+    background-color: #f4f1ea;
+}
+
+nav ul li a:hover {
+    transform: translateY(-2px);
+}
+
+main a {
+    transition: color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.visible,
+    .container div,
+    .gallery-card,
+    .gallery-item img,
+    .accordion-panel {
+        transition: none;
+        transform: none;
+    }
+}
+.vehicle-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    background-color: white;
+    border-top: 6px solid rgb(130, 106, 54);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-controls .control {
+    flex: 1 1 180px;
+}
+
+.vehicle-controls label {
+    color: rgb(80, 62, 30);
+}
+
+.vehicle-controls input,
+.vehicle-controls select {
+    background-color: #faf8f3;
+    border: 1px solid #b9ad8f;
+    border-radius: 0.5rem;
+}
+
+.vehicle-controls button {
+    padding: 0.8rem 1.4rem;
+    background-color: rgb(130, 106, 54);
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vehicle-controls button:hover {
+    background-color: rgb(0, 150, 136);
+}
+
+.vehicle-count {
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.vehicle-card {
+    background-color: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.25);
+    animation: cardIn 0.5s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.35);
+}
+
+.vehicle-card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.vehicle-card-body {
+    padding: 1rem 1.2rem 1.2rem 1.2rem;
+}
+
+.vehicle-card-body h3 {
+    padding: 0 0 0.4rem 0;
+    font-size: 1.3rem;
+}
+
+.vehicle-details {
+    font-size: 0.9rem;
+    color: rgb(130, 106, 54);
+    font-weight: bold;
+}
+
+.vehicle-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 105, 92);
+}
+
+.no-results {
+    padding: 1rem 20px;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+@keyframes cardIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vehicle-card {
+        animation: none;
+        transition: none;
+    }
+}
+:root {
+    --font-main: "Times New Roman", Times, Georgia, serif;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-main);
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+h2 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+h3 {
+    font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+}
+
+input,
+select,
+textarea,
+button,
+.accordion-button,
+.vehicle-controls button,
+.map-buttons button {
+    font-family: var(--font-main);
+}
+
+main > p,
+.container p,
+.accordion-panel p {
+    max-width: 75ch;
+}
+
+strong,
+th,
+label {
+    font-weight: 700;
+}

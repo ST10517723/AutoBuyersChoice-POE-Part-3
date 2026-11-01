@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send an enquiry about the Polo TSI, BMW X7, Toyota LandCruiser or Mercedes-Benz V-Class and get the starting price straight away.">
+    <link rel="stylesheet" href="css_assets/myfirststyle.css">
+    <title>AutoBuyersChoice | Any Enquiries</title>
+</head>
+<body>
+    <!--This is a header with a logo and a navigation menu-->
+    <header>
+        <img src="_images/AUTOBUYERSCHOICE.png" alt="AutoBuyersChoice Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Vehicle Enquiries</h1>
+
+        <p>
+            Do you have a question about one of the vehicles featured
+            on AutoBuyersChoice? Please complete the form below and send us
+            your enquiry. You will see the starting price of your chosen vehicle straight away.
+        </p>
+
+        <!--This is a Enquiry form which basically sends responses to google form-->
+
+        <form id="enquiryForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf6F-EF1lt_LmMzbi39npbXKfGvBC7l8oPrKX0yTTDyI47Oqw/formResponse" method="POST" novalidate>
+<!--The name field-->
+
+            <label for="name">Your Full Name:</label><br>
+            <input type="text" id="name" name="entry.2084744273" autocomplete="name">
+            <span class="error-message" id="nameError" role="alert"></span>
+
+            <br><br>
+
+<!--The email field-->
+
+            <label for="email">Your Email Address:</label><br>
+            <input type="email" id="email" name="entry.893499986" autocomplete="email">
+            <span class="error-message" id="emailError" role="alert"></span>
+
+            <br><br>
+
+<!--This is the vehicle dropdown-->
+
+            <label for="vehicle">Select Desired Vehicle:</label><br>
+            <select id="vehicle" name="entry.1214658938">
+                <option value="">Select a vehicle</option>
+                <option value="Polo Tsi">Polo TSI</option>
+                <option value="BMW X7">BMW X7</option>
+                <option value="Toyota LandCruiser">Toyota LandCruiser</option>
+                <option value="Mercedes-Benz V-Class">Mercedes-Benz V-Class</option>
+            </select>
+            <span class="error-message" id="vehicleError" role="alert"></span>
+
+            <br><br>
+
+<!--This one is for topic dropdown-->
+
+            <label for="topic">What would you like to know about</label><br>
+            <select id="topic" name="entry.449957808">
+                <option value="">Select a topic</option>
+                <option>Price</option>
+                <option>Performance</option>
+                <option>Fuel Economy</option>
+                <option>Reliability</option>
+                <option>Features</option>
+                <option>Other</option>
+            </select>
+            <span class="error-message" id="topicError" role="alert"></span>
+
+            <br><br>
+
+<!--This is for the message that you will send as an option with 500 words limit-->
+
+            <label for="message">Your Enquiry (optional):</label><br>
+            <textarea id="message" name="entry.838924664" rows="6" cols="40" maxlength="500"></textarea>
+            <span class="char-count" id="messageCount">0 / 500</span>
+            <span class="error-message" id="messageError" role="alert"></span>
+
+            <br><br>
+
+            <input type="submit" id="submitButton" value="Submit Enquiry">
+
+            <p class="form-status" id="formStatus" role="status"></p>
+
+        </form>
+
+        <!--This is simply hiddent until the form is sent the the details will pop up-->
+
+        <section class="response-box" id="enquiryResponse" hidden aria-live="polite">
+            <h2>Thank you, your enquiry has been sent</h2>
+            <p id="responseIntro"></p>
+            <ul>
+                <li id="responsePrice"></li>
+                <li id="responseDetails"></li>
+                <li id="responseTopic"></li>
+            </ul>
+            <p id="responseAvailability"></p>
+            <p><a href="enquiries.html">Send another enquiry</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; AutoBuyersChoice, All rights reserved. 2026</p>
+    </footer>
+<script src="js_assets/animations.js"></script>
+    <script src="js_assets/enquiries.js"></script>
+</body>
+</html>

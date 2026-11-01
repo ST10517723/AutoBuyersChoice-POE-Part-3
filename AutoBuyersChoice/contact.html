@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact AutoBuyersChoice in Pretoria or Cape Town. Send us a message, find our opening hours and get directions to our dealerships.">
+    <link rel="stylesheet" href="css_assets/myfirststyle.css">
+    <title>AutoBuyersChoice | Contact us</title>
+</head>
+<body>
+
+    <!--This is a header with a logo and a navigation menu-->
+
+    <header>
+        <img src="_images/AUTOBUYERSCHOICE.png" alt="AutoBuyersChoice Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Do you have a question about a vehicle or the information provided
+            by AutoBuyersChoice? Feel free to contact us.
+        </p>
+
+<!--This is our contact details -->
+
+        <h2>Contact Information</h2>
+
+        <p>
+            <strong>Phone number:</strong> 067 890 8909
+        </p>
+
+        <p>
+            <strong>Our Email:</strong> autobuyerschoice@gmail.com
+        </p>
+
+        <!--These are the Operating hours in different days-->
+
+        <h2>Opening Hours</h2>
+
+        <p>
+            Monday - Friday: 08:00 - 17:00
+        </p>
+
+        <p>
+            Saturday: 09:00 - 12:00
+        </p>
+
+        <p>
+            Sunday: Closed
+        </p>
+
+        <h2>Feel Free To Send Us A Message</h2>
+
+<!--This is a contact form which basically sends responses to google forms-->
+
+        <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScHQD3HnoZ60Q2xxmZvzDHdJZrcnqCmrWAJB0M6smT_6Wb4KQ/formResponse" method="POST" novalidate>
+
+            <!--The name field-->
+
+            <label for="contactName">Your Full Name:</label><br>
+            <input type="text" id="contactName" name="entry.1837980274" autocomplete="name">
+            <span class="error-message" id="contactNameError" role="alert"></span>
+
+            <br><br>
+
+<!--The email field-->
+
+            <label for="contactEmail">Your Email Address:</label><br>
+            <input type="email" id="contactEmail" name="entry.1574379930" autocomplete="email">
+            <span class="error-message" id="contactEmailError" role="alert"></span>
+
+            <br><br>
+
+<!--The contact field-->
+
+            <label for="contactPhone">Your Phone Number:</label><br>
+            <input type="tel" id="contactPhone" name="entry.1855490775" placeholder="e.g. 067 890 1129 or +27 67 890 1129" autocomplete="tel">
+            <span class="error-message" id="contactPhoneError" role="alert"></span>
+
+            <br><br>
+
+<!--The message type dropdown-->
+
+            <label for="contactType">Type of Message:</label><br>
+            <select id="contactType" name="entry.2101402831">
+                <option value="">Select a message type</option>
+                <option>Book A Test Drive</option>
+                <option>General Questions</option>
+                <option>Complaints</option>
+                <option>Feedback</option>
+                <option>Other</option>
+            </select>
+            <span class="error-message" id="contactTypeError" role="alert"></span>
+
+            <br><br>
+
+<!--The message part with 500 words limit-->
+
+            <label for="contactMessage">Your Message:</label><br>
+            <textarea id="contactMessage" name="entry.703453988" rows="6" cols="40" maxlength="500"></textarea>
+            <span class="char-count" id="contactCount">0 / 500</span>
+            <span class="error-message" id="contactMessageError" role="alert"></span>
+
+            <br><br>
+
+            <input type="submit" id="contactSubmit" value="Send Message">
+
+            <p class="form-status" id="contactStatus" role="status"></p>
+
+        </form>
+
+<!--This is basically hidden until the form has been sent then details will be sent-->
+
+        <section class="response-box" id="contactResponse" hidden aria-live="polite">
+            <h2>Thank you, your message has been sent</h2>
+            <p id="contactResponseText"></p>
+            <p>Your email app should open with your message ready to send. If it did not, <a id="mailtoLink" href="#">click here to open the email</a>.</p>
+            <p><a href="contact.html">Send another message</a></p>
+        </section>
+
+<!--Google maps for the two locations of the autobuyerschoice-->
+
+        <h3>Our First Location In Pretoria</h3>
+
+        <iframe title="Map of our Pretoria dealership" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1726.805439672106!2d28.237937714229048!3d-25.737461814480092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1786579083695!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        <h3>Our Second Location In Cape Town</h3>
+
+        <iframe title="Map of our Cape Town dealership" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d789.3811132746143!2d19.371052167760425!3d-34.556616225807545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1786579418168!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    </main>
+
+    <footer>
+        <p>&copy; AutoBuyersChoice, All rights reserved. 2026</p>
+    </footer>
+
+    <script src="js_assets/contact.js"></script>
+    <script src="js_assets/animations.js"></script>
+</body>
+</html>

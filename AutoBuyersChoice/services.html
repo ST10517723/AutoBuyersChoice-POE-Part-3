@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoBuyersChoice services: honest vehicle reviews, side-by-side vehicle comparisons and practical car buying guides.">
+    <link rel="stylesheet" href="css_assets/myfirststyle.css">
+    <title>AutoBuyersChoice | Our Services</title>
+</head>
+<body>
+    <header>
+        <img src="_images/AUTOBUYERSCHOICE.png" alt="AutoBuyersChoice Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Our Services</h1>
+
+        <p class="accordion-intro">Select a service below to read more about it.</p>
+
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-heading">
+                    <button type="button" class="accordion-button" id="button-reviews" aria-expanded="false" aria-controls="panel-reviews">Vehicle Reviews</button>
+                </h2>
+                <div class="accordion-panel" id="panel-reviews" role="region" aria-labelledby="button-reviews">
+                    <p>
+                        We provide information about vehicle performance,
+                        features, reliability and practicality and the main part is that we sell cars.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-heading">
+                    <button type="button" class="accordion-button" id="button-comparisons" aria-expanded="false" aria-controls="panel-comparisons">Vehicle Comparisons</button>
+                </h2>
+                <div class="accordion-panel" id="panel-comparisons" role="region" aria-labelledby="button-comparisons">
+                    <p>
+                        We compare different vehicles to help you understand
+                        their differences and choose the option that is mostly suitable for you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-heading">
+                    <button type="button" class="accordion-button" id="button-guides" aria-expanded="false" aria-controls="panel-guides">Buying Guides</button>
+                </h2>
+                <div class="accordion-panel" id="panel-guides" role="region" aria-labelledby="button-guides">
+                    <p>
+                        We provide good tips and information to consider
+                        before purchasing a car and we also sell vehicles.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+<h2>Browse Our Vehicles</h2>
+
+<div class="vehicle-controls" role="search">
+
+    <div class="control">
+        <label for="vehicleSearch">Search:</label>
+        <input type="search" id="vehicleSearch" placeholder="e.g. BMW, diesel, family">
+    </div>
+
+    <div class="control">
+        <label for="vehicleType">Type:</label>
+        <select id="vehicleType">
+            <option value="">All types</option>
+        </select>
+    </div>
+
+    <div class="control">
+        <label for="vehicleFuel">Fuel:</label>
+        <select id="vehicleFuel">
+            <option value="">All fuel types</option>
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+        </select>
+    </div>
+
+    <div class="control">
+        <label for="vehicleSort">Sort by:</label>
+        <select id="vehicleSort">
+            <option value="name">Name (A to Z)</option>
+            <option value="priceLow">Price (low to high)</option>
+            <option value="priceHigh">Price (high to low)</option>
+        </select>
+    </div>
+
+    <button type="button" id="vehicleClear">Clear filters</button>
+
+</div>
+
+<p class="vehicle-count" id="vehicleCount" aria-live="polite"></p>
+
+<div class="vehicle-grid" id="vehicleGrid"></div>
+
+<p class="no-results" id="noResults" hidden>No vehicles match your search. Try changing or clearing your filters.</p>
+    </main>
+
+    <footer>
+        <p>&copy; AutoBuyersChoice, All rights reserved. 2026</p>
+    </footer>
+<script src="js_assets/animations.js"></script>
+    <script src="js_assets/accordion.js"></script>
+    <script src="js_assets/vehicles.js"></script>
+</body>
+</html>
